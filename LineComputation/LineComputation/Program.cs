@@ -20,6 +20,7 @@ namespace LineComputation
             Geometric_Length len2 = new Geometric_Length(2, 3, 5, 7);
             double Line2 = len2.Calculate();
             len2.Equality_Of_Two_Lines(Line1, Line2);
+            len2.Compare_Two_Lines(Line1, Line2);
         }
     }
 

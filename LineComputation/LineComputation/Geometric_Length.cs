@@ -29,5 +29,14 @@ namespace LineComputation
             else
                 Console.WriteLine("Two lines are not equal");
         }
+        public void Compare_Two_Lines(double Line1, double Line2)
+        {
+            if (Line1.CompareTo(Line2)==0)
+                Console.WriteLine("Lengths of Two lines are eaqual");
+            if (Line1.CompareTo(Line2)> 0)
+                Console.WriteLine("Length of Line1 is greaterthan Length of  Line2");
+            else
+                Console.WriteLine("Length of Line2 is greaterthan Length of  Line1");
+        }
     }
 }
