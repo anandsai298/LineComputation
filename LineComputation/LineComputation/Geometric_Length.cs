@@ -16,10 +16,18 @@ namespace LineComputation
             this.y1 = y1;
             this.y2 = y2;
         }
-        public void Calculate()
+        public double Calculate()//remove void and give double for return value to compare two lines
         {
             double res = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             Console.WriteLine("length of the Line" + res);
+            return res;
+        }
+        public void Equality_Of_Two_Lines(double Line1, double Line2)
+        {
+            if (Line1 == Line2)
+                Console.WriteLine("Two lines are eaqual");
+            else
+                Console.WriteLine("Two lines are not equal");
         }
     }
 }
