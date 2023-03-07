@@ -35,7 +35,7 @@ namespace LineComputation
                 Console.WriteLine("Lengths of Two lines are eaqual");
             if (Line1.CompareTo(Line2)> 0)
                 Console.WriteLine("Length of Line1 is greaterthan Length of  Line2");
-            else
+            if (Line1.CompareTo(Line2) < 0)
                 Console.WriteLine("Length of Line2 is greaterthan Length of  Line1");
         }
     }
